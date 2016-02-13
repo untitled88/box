@@ -1,8 +1,8 @@
 #!/bin/bash
 # Script to execute 'yum update' and email the results
 EMAIL_LIST="me@marcusbean.com"
-OUT_FILE=/root/scripts/logs/yum_update_checker.out
-APP_DIR="/root/scripts"
+OUT_FILE=/root/logs/yum_update_checker.out
+APP_DIR="/root/box"
 
 # Run yum update and do NOT install
 dnf update << EOF > ${OUT_FILE}
